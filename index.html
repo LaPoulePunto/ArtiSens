@@ -114,6 +114,7 @@
         #countdown {
             display: flex;
             gap: 10px;
+            align-items: center;
         }
 
         .countdown-section {
@@ -129,6 +130,13 @@
         .countdown-section .label {
             font-size: 1em;
             color: #9a9a9a;
+        }
+
+        .separator {
+            font-size: 2.5em;
+            line-height: 1;
+            color: #61dafb;
+            vertical-align: middle; /* Ajouté pour centrer les deux-points */
         }
 
         h1, h2 {
@@ -221,7 +229,7 @@
                 <strong>Nathan Villette</strong>
                 <span>Chef de projet</span>
             </div>
-            <span class="pastille pastille-nathan"></span>
+            <span class="pastille pastille-nathan" title="Nathan Villette"></span>
         </div>
         <div class="member">
             <img src="vector-sign-of-people-icon.jpg" alt="Oscar Neveux">
@@ -229,7 +237,7 @@
                 <strong>Oscar Neveux</strong>
                 <span>Membre de l'équipe</span>
             </div>
-            <span class="pastille pastille-oscar"></span>
+            <span class="pastille pastille-oscar" title="Oscar Neveux"></span>
         </div>
         <div class="member">
             <img src="vector-sign-of-people-icon.jpg" alt="Allan Laheu">
@@ -237,7 +245,7 @@
                 <strong>Allan Laheu</strong>
                 <span>Membre de l'équipe</span>
             </div>
-            <span class="pastille pastille-allan"></span>
+            <span class="pastille pastille-allan" title="Allan Laheu"></span>
         </div>
     </div>
     <div class="main-content">
@@ -248,17 +256,17 @@
                     <div class="value" id="days">00</div>
                     <div class="label">DAYS</div>
                 </div>
-                <div>:</div>
+                <div class="separator">:</div>
                 <div class="countdown-section">
                     <div class="value" id="hours">00</div>
                     <div class="label">HOURS</div>
                 </div>
-                <div>:</div>
+                <div class="separator">:</div>
                 <div class="countdown-section">
                     <div class="value" id="minutes">00</div>
                     <div class="label">MINUTES</div>
                 </div>
-                <div>:</div>
+                <div class="separator">:</div>
                 <div class="countdown-section">
                     <div class="value" id="seconds">00</div>
                     <div class="label">SECONDS</div>
@@ -277,17 +285,17 @@
                     <div class="bar-inner">
                         <div class="bar-fill color1" style="width: 70%;"></div>
                         <span class="percentage">70%</span>
-                        <span class="pastille pastille-nathan"></span>
-                        <span class="pastille pastille-oscar"></span>
-                        <span class="pastille pastille-allan"></span>
+                        <span class="pastille pastille-nathan" title="Nathan Villette"></span>
+                        <span class="pastille pastille-oscar" title="Oscar Neveux"></span>
+                        <span class="pastille pastille-allan" title="Allan Laheu"></span>
                     </div>
                 </div>
                 <div class="bar">
                     <div class="label">WBS</div>
                     <div class="bar-inner">
-                        <div class="bar-fill color2" style="width: 45%;"></div>
-                        <span class="percentage">45%</span>
-                        <span class="pastille pastille-allan"></span>
+                        <div class="bar-fill color2" style="width: 10%;"></div>
+                        <span class="percentage">10%</span>
+                        <span class="pastille pastille-allan" title="Allan Laheu"></span>
                     </div>
                 </div>
                 <div class="bar">
@@ -307,7 +315,7 @@
             </div>
         </div>
         <div class="chart-container" id="chart-container-2">
-            <h2>Avancement du 03/06 (Non remplis pour le moment)</h2>
+            <h2>Avancement du 03/06 (Non rempli pour le moment)</h2>
             <div class="nav-arrow left" onclick="navigate(-1)">&#10094;</div>
             <div class="nav-arrow right" onclick="navigate(1)">&#10095;</div>
             <div class="chart">
@@ -315,34 +323,34 @@
                     <div class="label">Cahier des charges</div>
                     <div class="bar-inner">
                         <div class="bar-fill color1" style="width: 5%;"></div>
-                        <span class="percentage">5%</span>
+                        <span class="percentage">0%</span>
                     </div>
                 </div>
                 <div class="bar">
                     <div class="label">WBS</div>
                     <div class="bar-inner">
                         <div class="bar-fill color2" style="width: 5%;"></div>
-                        <span class="percentage">5%</span>
+                        <span class="percentage">0%</span>
                     </div>
                 </div>
                 <div class="bar">
                     <div class="label">RBS</div>
                     <div class="bar-inner">
                         <div class="bar-fill color3" style="width: 5%;"></div>
-                        <span class="percentage">5%</span>
+                        <span class="percentage">0%</span>
                     </div>
                 </div>
                 <div class="bar">
                     <div class="label">Diagramme de GANTT</div>
                     <div class="bar-inner">
                         <div class="bar-fill color4" style="width: 5%;"></div>
-                        <span class="percentage">5%</span>
+                        <span class="percentage">0%</span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="chart-container" id="chart-container-3">
-            <h2>Avancement du 06/06 (Non remplis pour le moment)</h2>
+            <h2>Avancement du 06/06 (Non rempli pour le moment)</h2>
             <div class="nav-arrow left" onclick="navigate(-1)">&#10094;</div>
             <div class="nav-arrow right" onclick="navigate(1)">&#10095;</div>
             <div class="chart">
@@ -350,28 +358,28 @@
                     <div class="label">Cahier des charges</div>
                     <div class="bar-inner">
                         <div class="bar-fill color1" style="width: 5%;"></div>
-                        <span class="percentage">5%</span>
+                        <span class="percentage">0%</span>
                     </div>
                 </div>
                 <div class="bar">
                     <div class="label">WBS</div>
                     <div class="bar-inner">
                         <div class="bar-fill color2" style="width: 5%;"></div>
-                        <span class="percentage">5%</span>
+                        <span class="percentage">0%</span>
                     </div>
                 </div>
                 <div class="bar">
                     <div class="label">RBS</div>
                     <div class="bar-inner">
                         <div class="bar-fill color3" style="width: 5%;"></div>
-                        <span class="percentage">5%</span>
+                        <span class="percentage">0%</span>
                     </div>
                 </div>
                 <div class="bar">
                     <div class="label">Diagramme de GANTT</div>
                     <div class="bar-inner">
                         <div class="bar-fill color4" style="width: 5%;"></div>
-                        <span class="percentage">5%</span>
+                        <span class="percentage">0%</span>
                     </div>
                 </div>
             </div>
