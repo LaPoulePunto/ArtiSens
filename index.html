@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -136,10 +137,12 @@
             font-size: 2.5em;
             line-height: 1;
             color: #61dafb;
-            vertical-align: middle; /* Ajouté pour centrer les deux-points */
+            vertical-align: middle;
+            /* Ajouté pour centrer les deux-points */
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             color: #00aaff;
         }
 
@@ -194,11 +197,25 @@
             font-weight: bold;
         }
 
-        .color1 { background-color: #a0e8af; }
-        .color2 { background-color: #6edeb8; }
-        .color3 { background-color: #4dc3d9; }
-        .color4 { background-color: #3a99db; }
-        .color5 { background-color: #2c79b9; }
+        .color1 {
+            background-color: #a0e8af;
+        }
+
+        .color2 {
+            background-color: #6edeb8;
+        }
+
+        .color3 {
+            background-color: #4dc3d9;
+        }
+
+        .color4 {
+            background-color: #3a99db;
+        }
+
+        .color5 {
+            background-color: #2c79b9;
+        }
 
         .nav-arrow {
             cursor: pointer;
@@ -219,221 +236,234 @@
         }
     </style>
 </head>
+
 <body>
-<div class="container">
-    <div class="sidebar">
-        <h2>Présentation des Membres</h2>
-        <div class="member">
-            <img src="people-icon-symbol-sign-vector.jpg" alt="Nathan Villette">
-            <div class="member-info">
-                <strong>Nathan Villette</strong>
-                <span>Chef de projet</span>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Présentation des Membres</h2>
+            <div class="member">
+                <img src="people-icon-symbol-sign-vector.jpg" alt="Nathan Villette">
+                <div class="member-info">
+                    <strong>Nathan Villette</strong>
+                    <span>Chef de projet</span>
+                </div>
+                <span class="pastille pastille-nathan" title="Nathan Villette"></span>
             </div>
-            <span class="pastille pastille-nathan" title="Nathan Villette"></span>
+            <div class="member">
+                <img src="vector-sign-of-people-icon.jpg" alt="Oscar Neveux">
+                <div class="member-info">
+                    <strong>Oscar Neveux</strong>
+                    <span>Membre de l'équipe</span>
+                </div>
+                <span class="pastille pastille-oscar" title="Oscar Neveux"></span>
+            </div>
+            <div class="member">
+                <img src="vector-sign-of-people-icon.jpg" alt="Allan Laheu">
+                <div class="member-info">
+                    <strong>Allan Laheu</strong>
+                    <span>Membre de l'équipe</span>
+                </div>
+                <span class="pastille pastille-allan" title="Allan Laheu"></span>
+            </div>
         </div>
-        <div class="member">
-            <img src="vector-sign-of-people-icon.jpg" alt="Oscar Neveux">
-            <div class="member-info">
-                <strong>Oscar Neveux</strong>
-                <span>Membre de l'équipe</span>
+        <div class="main-content">
+            <div id="countdown-container">
+                <div id="countdown-title">Date limite du projet :</div>
+                <div id="countdown">
+                    <div class="countdown-section">
+                        <div class="value" id="days">00</div>
+                        <div class="label">DAYS</div>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="countdown-section">
+                        <div class="value" id="hours">00</div>
+                        <div class="label">HOURS</div>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="countdown-section">
+                        <div class="value" id="minutes">00</div>
+                        <div class="label">MINUTES</div>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="countdown-section">
+                        <div class="value" id="seconds">00</div>
+                        <div class="label">SECONDS</div>
+                    </div>
+                </div>
             </div>
-            <span class="pastille pastille-oscar" title="Oscar Neveux"></span>
-        </div>
-        <div class="member">
-            <img src="vector-sign-of-people-icon.jpg" alt="Allan Laheu">
-            <div class="member-info">
-                <strong>Allan Laheu</strong>
-                <span>Membre de l'équipe</span>
+            <h1>ArtiSens</h1>
+            <h2>Développement d'un site web de commerce électronique</h2>
+            <div class="chart-container active" id="chart-container-1">
+                <h2>Avancement du 29/05</h2>
+                <div class="nav-arrow left" onclick="navigate(-1)">&#10094;</div>
+                <div class="nav-arrow right" onclick="navigate(1)">&#10095;</div>
+                <div class="chart">
+                    <div class="bar">
+                        <div class="label">Cahier des charges</div>
+                        <div class="bar-inner">
+                            <div class="bar-fill color1" style="width: 55%;"></div>
+                            <span class="percentage">70%</span>
+                            <span class="pastille pastille-nathan" title="Nathan Villette"></span>
+                            <span class="pastille pastille-oscar" title="Oscar Neveux"></span>
+                            <span class="pastille pastille-allan" title="Allan Laheu"></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="label">WBS</div>
+                        <div class="bar-inner">
+                            <div class="bar-fill color2" style="width: 10%;"></div>
+                            <span class="percentage">10%</span>
+                            <span class="pastille pastille-allan" title="Allan Laheu"></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="label">RBS</div>
+                        <div class="bar-inner">
+                            <div class="bar-fill color3" style="width: 5%;"></div>
+                            <span class="percentage">0%</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="label">Diagramme de GANTT</div>
+                        <div class="bar-inner">
+                            <div class="bar-fill color4" style="width: 5%;"></div>
+                            <span class="percentage">0%</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <span class="pastille pastille-allan" title="Allan Laheu"></span>
+            <div class="chart-container" id="chart-container-2">
+                <h2>Avancement du 03/06</h2>
+                <div class="nav-arrow left" onclick="navigate(-1)">&#10094;</div>
+                <div class="nav-arrow right" onclick="navigate(1)">&#10095;</div>
+                <div class="chart">
+                    <div class="bar">
+                        <div class="label">Cahier des charges</div>
+                        <div class="bar-inner">
+                            <div class="bar-fill color1" style="width: 68%;"></div>
+                            <span class="percentage">100%</span>
+                            <span class="pastille pastille-nathan" title="Nathan Villette"></span>
+                            <span class="pastille pastille-oscar" title="Oscar Neveux"></span>
+                            <span class="pastille pastille-allan" title="Allan Laheu"></span>
+                        </div>
+
+                    </div>
+                    <div class="bar">
+                        <div class="label">WBS</div>
+                        <div class="bar-inner">
+                            <div class="bar-fill color2" style="width: 68%;"></div>
+                            <span class="percentage">100%</span>
+                            <span class="pastille pastille-allan" title="Allan Laheu"></span>
+                            <span class="pastille pastille-oscar" title="Oscar Neveux"></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="label">RBS</div>
+                        <div class="bar-inner">
+                            <div class="bar-fill color3" style="width: 68%;"></div>
+                            <span class="percentage">100%</span>
+                            <span class="pastille pastille-nathan" title="Nathan Villette"></span>
+                            <span class="pastille pastille-oscar" title="Oscar Neveux"></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="label">Diagramme de GANTT</div>
+                        <div class="bar-inner">
+                            <div class="bar-fill color4" style="width: 40%;"></div>
+                            <span class="percentage">60%</span>
+                            <span class="pastille pastille-nathan" title="Nathan Villette"></span>
+                            <span class="pastille pastille-oscar" title="Oscar Neveux"></span>
+                            <span class="pastille pastille-allan" title="Allan Laheu"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-container" id="chart-container-3">
+                <h2>Avancement du 06/06 (Non rempli pour le moment)</h2>
+                <div class="nav-arrow left" onclick="navigate(-1)">&#10094;</div>
+                <div class="nav-arrow right" onclick="navigate(1)">&#10095;</div>
+                <div class="chart">
+                    <div class="bar">
+                        <div class="label">Cahier des charges</div>
+                        <div class="bar-inner">
+                            <div class="bar-fill color1" style="width: 5%;"></div>
+                            <span class="percentage">0%</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="label">WBS</div>
+                        <div class="bar-inner">
+                            <div class="bar-fill color2" style="width: 5%;"></div>
+                            <span class="percentage">0%</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="label">RBS</div>
+                        <div class="bar-inner">
+                            <div class="bar-fill color3" style="width: 5%;"></div>
+                            <span class="percentage">0%</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="label">Diagramme de GANTT</div>
+                        <div class="bar-inner">
+                            <div class="bar-fill color4" style="width: 5%;"></div>
+                            <span class="percentage">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="main-content">
-        <div id="countdown-container">
-            <div id="countdown-title">Date limite du projet :</div>
-            <div id="countdown">
-                <div class="countdown-section">
-                    <div class="value" id="days">00</div>
-                    <div class="label">DAYS</div>
-                </div>
-                <div class="separator">:</div>
-                <div class="countdown-section">
-                    <div class="value" id="hours">00</div>
-                    <div class="label">HOURS</div>
-                </div>
-                <div class="separator">:</div>
-                <div class="countdown-section">
-                    <div class="value" id="minutes">00</div>
-                    <div class="label">MINUTES</div>
-                </div>
-                <div class="separator">:</div>
-                <div class="countdown-section">
-                    <div class="value" id="seconds">00</div>
-                    <div class="label">SECONDS</div>
-                </div>
-            </div>
-        </div>
-        <h1>ArtiSens</h1>
-        <h2>Développement d'un site web de commerce électronique</h2>
-        <div class="chart-container active" id="chart-container-1">
-            <h2>Avancement du 29/05</h2>
-            <div class="nav-arrow left" onclick="navigate(-1)">&#10094;</div>
-            <div class="nav-arrow right" onclick="navigate(1)">&#10095;</div>
-            <div class="chart">
-                <div class="bar">
-                    <div class="label">Cahier des charges</div>
-                    <div class="bar-inner">
-                        <div class="bar-fill color1" style="width: 70%;"></div>
-                        <span class="percentage">70%</span>
-                        <span class="pastille pastille-nathan" title="Nathan Villette"></span>
-                        <span class="pastille pastille-oscar" title="Oscar Neveux"></span>
-                        <span class="pastille pastille-allan" title="Allan Laheu"></span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="label">WBS</div>
-                    <div class="bar-inner">
-                        <div class="bar-fill color2" style="width: 10%;"></div>
-                        <span class="percentage">10%</span>
-                        <span class="pastille pastille-allan" title="Allan Laheu"></span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="label">RBS</div>
-                    <div class="bar-inner">
-                        <div class="bar-fill color3" style="width: 5%;"></div>
-                        <span class="percentage">0%</span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="label">Diagramme de GANTT</div>
-                    <div class="bar-inner">
-                        <div class="bar-fill color4" style="width: 5%;"></div>
-                        <span class="percentage">0%</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="chart-container" id="chart-container-2">
-            <h2>Avancement du 03/06 (Non rempli pour le moment)</h2>
-            <div class="nav-arrow left" onclick="navigate(-1)">&#10094;</div>
-            <div class="nav-arrow right" onclick="navigate(1)">&#10095;</div>
-            <div class="chart">
-                <div class="bar">
-                    <div class="label">Cahier des charges</div>
-                    <div class="bar-inner">
-                        <div class="bar-fill color1" style="width: 5%;"></div>
-                        <span class="percentage">0%</span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="label">WBS</div>
-                    <div class="bar-inner">
-                        <div class="bar-fill color2" style="width: 5%;"></div>
-                        <span class="percentage">0%</span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="label">RBS</div>
-                    <div class="bar-inner">
-                        <div class="bar-fill color3" style="width: 5%;"></div>
-                        <span class="percentage">0%</span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="label">Diagramme de GANTT</div>
-                    <div class="bar-inner">
-                        <div class="bar-fill color4" style="width: 5%;"></div>
-                        <span class="percentage">0%</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="chart-container" id="chart-container-3">
-            <h2>Avancement du 06/06 (Non rempli pour le moment)</h2>
-            <div class="nav-arrow left" onclick="navigate(-1)">&#10094;</div>
-            <div class="nav-arrow right" onclick="navigate(1)">&#10095;</div>
-            <div class="chart">
-                <div class="bar">
-                    <div class="label">Cahier des charges</div>
-                    <div class="bar-inner">
-                        <div class="bar-fill color1" style="width: 5%;"></div>
-                        <span class="percentage">0%</span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="label">WBS</div>
-                    <div class="bar-inner">
-                        <div class="bar-fill color2" style="width: 5%;"></div>
-                        <span class="percentage">0%</span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="label">RBS</div>
-                    <div class="bar-inner">
-                        <div class="bar-fill color3" style="width: 5%;"></div>
-                        <span class="percentage">0%</span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="label">Diagramme de GANTT</div>
-                    <div class="bar-inner">
-                        <div class="bar-fill color4" style="width: 5%;"></div>
-                        <span class="percentage">0%</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Jun 7, 2024 23:59:00").getTime();
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jun 7, 2024 23:59:00").getTime();
 
-    // Update the count down every 1 second
-    var x = setInterval(function () {
-        // Get today's date and time
-        var now = new Date().getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+            // Get today's date and time
+            var now = new Date().getTime();
 
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
 
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // Output the result in an element with id="countdown"
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("minutes").innerHTML = minutes;
-        document.getElementById("seconds").innerHTML = seconds;
+            // Output the result in an element with id="countdown"
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
 
-        // If the count down is over, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+        // Chart navigation
+        let currentChartIndex = 0;
+        const charts = document.querySelectorAll('.chart-container');
+
+        function navigate(direction) {
+            charts[currentChartIndex].classList.remove('active');
+            currentChartIndex += direction;
+
+            if (currentChartIndex < 0) {
+                currentChartIndex = charts.length - 1;
+            } else if (currentChartIndex >= charts.length) {
+                currentChartIndex = 0;
+            }
+
+            charts[currentChartIndex].classList.add('active');
         }
-    }, 1000);
-
-    // Chart navigation
-    let currentChartIndex = 0;
-    const charts = document.querySelectorAll('.chart-container');
-
-    function navigate(direction) {
-        charts[currentChartIndex].classList.remove('active');
-        currentChartIndex += direction;
-
-        if (currentChartIndex < 0) {
-            currentChartIndex = charts.length - 1;
-        } else if (currentChartIndex >= charts.length) {
-            currentChartIndex = 0;
-        }
-
-        charts[currentChartIndex].classList.add('active');
-    }
-</script>
+    </script>
 </body>
+
 </html>
